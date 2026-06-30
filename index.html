@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WHO OWNS THE BLUE? - Cyber-Zeitgeist</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Darumadrop+One&family=Hanalei+Fill&family=Hanken+Grotesk:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Sidebar Navigation -->
+    <div id="sidebar-nav" class="sidebar-nav hidden">
+        <aside class="sidebar">
+            <div class="sidebar-title">Cyber-<br/>Zeitgeist</div>
+            <div class="sidebar-divider"></div>
+            <p class="sidebar-subtitle">guide to visitors</p>
+            <nav class="sidebar-nav-links">
+                <button onclick="scrollToSection('cover')" data-section="cover">
+                    <span class="nav-dot">○</span>Cover
+                </button>
+                <button onclick="scrollToSection('intro')" data-section="intro">
+                    <span class="nav-dot">○</span>Introduction
+                </button>
+                <button onclick="scrollToSection('chapter1')" data-section="chapter1">
+                    <span class="nav-dot">○</span>Batik Is Not A Style
+                </button>
+                <button onclick="scrollToSection('chapter2')" data-section="chapter2">
+                    <span class="nav-dot">○</span>Discipline & Extraction
+                </button>
+                <button onclick="scrollToSection('chapter3')" data-section="chapter3">
+                    <span class="nav-dot">○</span>Traffic Buries Craft
+                </button>
+                <button onclick="scrollToSection('artwork')" data-section="artwork">
+                    <span class="nav-dot">○</span>Indigo Breath
+                </button>
+                <button onclick="scrollToSection('conclusion')" data-section="conclusion">
+                    <span class="nav-dot">○</span>Conclusion
+                </button>
+                <button onclick="scrollToSection('references')" data-section="references">
+                    <span class="nav-dot">○</span>References
+                </button>
+            </nav>
+        </aside>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page 1: Cover -->
+        <section id="cover" class="page-cover">
+            <canvas id="cover-canvas"></canvas>
+            <div class="cover-content">
+                <div class="cover-eyebrow">COLUMN 07 — AUTHORITY</div>
+                <h1 class="cover-title">WHO OWNS<br/>THE BLUE?</h1>
+                <div class="cover-subtitle">Cyber-Zeitgeist</div>
+                <div class="cover-author">By LIAO YUNCHENGXI</div>
+                <button id="enter-button" class="cover-button" onclick="scrollToSection('intro')">ENTER COLUMN</button>
+            </div>
+            <div class="scroll-hint">
+                <span>↓ SCROLL</span>
+            </div>
+        </section>
+
+        <!-- Content Pages Container -->
+        <div class="content-pages" id="content-pages">
+            <!-- Page 2: Introduction -->
+        <section id="intro" class="page-intro">
+            <div class="intro-container">
+                <h2 class="intro-title animate-in">The Mask of Democracy</h2>
+                <p class="intro-subtitle animate-in">— How Generative Art Steals the Soul of Batik</p>
+                <div class="intro-subheader animate-in">Between blue and white, who defines "you"? </div>
+                <p class="intro-paragraph animate-in">
+                    When you type in the four characters "batik style," the algorithm spits out a beautiful
+                     pattern within seconds. The system congratulates you on becoming an "artist"—but you've 
+                     just participated in a cultural murder.<br/><br/> Enter "batik style" into Midjourney, and within 
+                     moments, a vividly saturated image appears on your screen. "The age of everyone being an 
+                     artist has arrived." How appealing. Yet behind this phrase lies an ugly truth: generative 
+                     art does not liberate creativity; it systematically erodes the cultural sovereignty of batik.
+                      Disguised as democratization, this is the most concealed form of cultural colonization—our 
+                      era's most insidious violence. 
+                    <span class="highlight-text" id="cultural-murder-1">"cultural murder"</span>
+                </p>
+                <div class="intro-quote animate-in">
+                    <p class="quote-text">
+                        <span class="highlight-text" id="cultural-murder-2">cultural murder</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+            <!-- Page 3: Chapter 1 -->
+            <section id="chapter1" class="page-chapter1">
+                <div class="chapter1-left">
+                    <!-- Pattern Row 1: Family Pattern -->
+                    <div class="pattern-row animate-in">
+                        <div class="pattern-label">
+                            <span>Family Pattern</span>
+                        </div>
+                        <div class="carousel-container">
+                            <div class="carousel-wrapper" data-carousel="0">
+                                <img src="images/Butterfly mother pattern.png"
+                                     alt="Butterfly Mother Pattern"
+                                     data-name="Butterfly mother pattern.png">
+                                <img src="images/fish pattern.png"
+                                     alt="Fish Pattern"
+                                     data-name="fish pattern.png">
+                                <img src="images/bird pattern.jpg"
+                                     alt="Bird Pattern"
+                                     data-name="bird pattern.jpg">
+                                <img src="images/gourd pattern.png"
+                                     alt="Gourd Pattern"
+                                     data-name="gourd pattern.png">
+                            </div>
+                            <div class="carousel-image-name"></div>
+                            <div class="carousel-controls">
+                                <button class="carousel-btn prev" onclick="prevSlide(0)">‹</button>
+                                <div class="carousel-dots"></div>
+                                <button class="carousel-btn next" onclick="nextSlide(0)">›</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pattern Row 2: Funeral Pattern -->
+                    <div class="pattern-row animate-in">
+                        <div class="pattern-label">
+                            <span>Funeral Pattern</span>
+                        </div>
+                        <div class="carousel-container">
+                            <div class="carousel-wrapper" data-carousel="1">
+                                <img src="images/Bronze drum patterns.jpg"
+                                     alt="Bronze Drum Patterns"
+                                     data-name="Bronze drum patterns.jpg">
+                                <img src="images/ox patterns.jpg"
+                                     alt="Ox Patterns"
+                                     data-name="ox patterns.jpg">
+                                <img src="images/spiral patterns.jpg"
+                                     alt="Spiral Patterns"
+                                     data-name="spiral patterns.jpg">
+                            </div>
+                            <div class="carousel-image-name"></div>
+                            <div class="carousel-controls">
+                                <button class="carousel-btn prev" onclick="prevSlide(1)">‹</button>
+                                <div class="carousel-dots"></div>
+                                <button class="carousel-btn next" onclick="nextSlide(1)">›</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pattern Row 3: Migration Pattern -->
+                    <div class="pattern-row animate-in">
+                        <div class="pattern-label">
+                            <span>Migration Pattern</span>
+                        </div>
+                        <div class="carousel-container">
+                            <div class="carousel-wrapper" data-carousel="2">
+                                <img src="images/Mountain patterns.jpg"
+                                     alt="Mountain Patterns"
+                                     data-name="Mountain patterns.jpg">
+                                <img src="images/water ripple patterns.jpg"
+                                     alt="Water Ripple Patterns"
+                                     data-name="water ripple patterns.jpg">
+                                <img src="images/serrated patterns.jpg"
+                                     alt="Serrated Patterns"
+                                     data-name="serrated patterns.jpg">
+                            </div>
+                            <div class="carousel-image-name"></div>
+                            <div class="carousel-controls">
+                                <button class="carousel-btn prev" onclick="prevSlide(2)">‹</button>
+                                <div class="carousel-dots"></div>
+                                <button class="carousel-btn next" onclick="nextSlide(2)">›</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pattern Row 4: Women's Knowledge -->
+                    <div class="pattern-row animate-in">
+                        <div class="pattern-label">
+                            <span>Women's Knowledge</span>
+                        </div>
+                        <div class="carousel-container">
+                            <div class="carousel-wrapper" data-carousel="3">
+                                <img src="images/Whorl pattern (spiral pattern).jpg"
+                                     alt="Whorl Pattern"
+                                     data-name="Whorl pattern (spiral pattern).jpg">
+                                <img src="images/floral and vine pattern.jpg"
+                                     alt="Floral and Vine Pattern"
+                                     data-name="floral and vine pattern.jpg">
+                            </div>
+                            <div class="carousel-image-name"></div>
+                            <div class="carousel-controls">
+                                <button class="carousel-btn prev" onclick="prevSlide(3)">‹</button>
+                                <div class="carousel-dots"></div>
+                                <button class="carousel-btn next" onclick="nextSlide(3)">›</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="chapter1-right">
+                    <h2 class="chapter1-title animate-in">
+                        I. Batik Is Not a Style,
+                    </h2>
+                    <h2 class="chapter1-title animate-in">
+                        But a Boundary of Knowledge
+                    </h2>
+                    <p class="chapter1-paragraph animate-in">
+                        In traditional batik communities of Guizhou, batik has never been a pattern game
+                         accessible to everyone.  It is a knowledge system governed by strict apprenticeship, 
+                         ethnic boundaries, and ritual taboos. Certain motifs belong only to specific families;
+                          certain totems appear exclusively in funeral ceremonies; the gradations of blue record
+                           a village's migration history. This is knowledge authority embedded within a 
+                           particular social structure.
+                    </p>
+                    <p class="chapter1-paragraph animate-in">
+                        Generative art uproots these patterns from their cultural soil and mass-produces
+                         them under the name of "style." It makes laypeople believe they possess batik, 
+                         while in reality batik has lost itself. What you're producing is not batik—it's 
+                         an image that "looks like batik." Algorithms won't tell you the difference.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Page 4: Chapter 2 -->
+            <section id="chapter2" class="page-chapter2">
+                <div class="chapter2-header">
+                    <h2 class="chapter2-title animate-in">
+                        II. From Discipline to Extraction: your
+                    </h2>
+                    <h2 class="chapter2-title animate-in">
+                        "Freedom" Is Someone Else's Bill 
+                    </h2>
+                </div>
+                <div class="chapter2-body">
+                    <div class="chapter2-main-row">
+                        <div class="chapter2-images-left animate-in">
+                            <img src="images/光头.png" alt="Foucault" />
+                            <img src="images/光头书.png" alt="Discipline and Punish" />
+                        </div>
+                        <div class="chapter2-text-top">
+                            <p class="animate-in">
+                                Foucault reminds us in Discipline and Punish: knowledge is never neutral. Whoever defines "what counts as knowledge" decides "who can be heard." （Foucault, 1977）In generative art, platforms and algorithms have become the new "knowledge authorities." Through dataset selection and model optimization, they silently define what "batik style" means. Meanwhile, the Guizhou women who truly master batik are excluded from this definition. All packaged as "democratization." Foucault would point out: this is an upgraded form of discipline—not enforced through violent prohibition, but through technological seduction that leads you to willingly surrender control over knowledge. You are not creating; you are replicating a "style" already stripped of meaning.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="chapter2-right-section">
+                        <div class="chapter2-text-bottom animate-in">
+                            <p>
+                                Zuboff introduces another concept in The Age of Surveillance Capitalism: data extraction. Platforms harvest our behaviors, preferences, and cultural expressions, transforming them into tradable products. (Zuboff, 2019) When you generate "batik style" images, you are contributing free annotations to the platform's models. The true custodians of batik receive no credit, no compensation. Old colonialism plundered land and resources; new colonialism exploits meaning and knowledge.
+                            </p>
+                        </div>
+                        <div class="chapter2-images-right animate-in">
+                            <img src="images/卷发.png" alt="Zuboff" />
+                            <img src="images/卷发书.png" alt="The Age of Surveillance Capitalism" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Page 5: Chapter 3 -->
+            <section id="chapter3" class="page-chapter3">
+                <div class="chapter3-header">
+                    <h2 class="chapter3-title animate-in">
+                        III. Traffic Buries Craft: When Algorithms <br/> Become New Colonial Masters
+                    </h2>
+                </div>
+                
+                <div class="chapter3-grid">
+                    <div class="chapter3-col1 animate-in">
+                        <p>In <span class="stat-number anim-num" data-value="2023">2023</span>, when reporters from the People's Daily interviewed Yang 
+                            Xiuzhen, a national-level batik heritage inheritor, she said: 
+                            "The patterns they (machines) produce are ones we've never 
+                            dared to create ourselves—those would be considered taboo." 
+                            Yet the traditional patterns she has spent her life preserving 
+                            are now being mass-produced by AI and sold at low prices. </p>
+                    </div>
+                    
+                    <div class="chapter3-col2 animate-in">
+                        <div class="stat-block">
+                            <p>Handcrafted batik posts on Xiaohongshu receive fewer than a thousand views, while 
+                                AI-generated "batik-style" content accounts for 62% of such content, with 
+                                individual posts receiving thousands of likes. The average price of handmade 
+                                batik ranges from 100 to 800 yuan, whereas AI imitations sell for only 
+                                20 to 200 yuan. AI-generated "ethnic-style" products have surged by <span class="stat-number anim-num" data-value="140" data-suffix="%">140%</span>. 
+                                Meanwhile, China's AI image generation tool market reached <span class="stat-number anim-num-dec" data-value="47.17" data-suffix=" billion yuan">47.17 billion yuan</span>, 
+                                nearly five times larger than the previous year.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="chapter3-col3 animate-in">
+                        <p>
+                            A survey by MIT Technology Review revealed that in LAION-5B, the 
+                            world's largest AI training dataset, over <span class="stat-number anim-num-dec" data-value="2.4" data-suffix=" million">2.4 million</span> images belong 
+                            to intangible cultural heritage, yet less than <span class="stat-number anim-num-dec" data-value="0.5" data-suffix="%">0.5%</span> credit their 
+                            cultural origins. Data labeling is outsourced to workers in Kenya, 
+                            who earn less than two dollars per hour. 
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="chapter3-footer animate-in">
+                    <p>
+                        Under the name of "democratization," algorithms compress batik into disposable 
+                        style tags. This is not a technological competition, but a transfer of power—those 
+                        who possess computing power now hold the authority to define "batik." Traditional 
+                        artisans are excluded, reduced to mere "material providers." Algorithms know nothing 
+                        of taboos, and platforms care little for heritage. As the market expands at nearly 
+                        fivefold speed, artisans are aging at a rate where <span class="stat-number anim-num" data-value="64" data-suffix="%">64%</span> are over 45—what I see is 
+                        not a triumph of efficiency, but a cultural sovereignty ceded under the guise of 
+                        "democratization." 
+                    </p>
+                </div>
+            </section>
+
+            <!-- Page 7: Artwork -->
+            <section id="artwork" class="page-artwork">
+                <div class="artwork-header">
+                    <h2 class="artwork-title animate-in">
+                        IV.the blue of breathing,not handed over to keywords 
+                    </h2>
+                </div>
+                <div class="artwork-body">
+                    <div class="artwork-top-row">
+                        <div class="artwork-video-container animate-in">
+                            <video src="videos/视频.mp4" controls class="artwork-video"></video>
+                            <p class="artwork-video-caption">This is my work</p>
+                        </div>
+                        <div class="artwork-text-top">
+                            <p class="artwork-paragraph animate-in">
+                                As a column piece for this issue of the "Spirit of the Digital Age" digital 
+                                newsletter, I created *Indigo Breath*. This is an interactive dance video 
+                                artwork built using Touch Designer and motion capture technology, entirely 
+                                produced, shot, edited, and choreographed by me. The choreography is 
+                                narrative-driven—dancers move from expansion to contraction, from 
+                                fluidity to obstruction, metaphorically tracing the life cycle of 
+                                batik: drawing, waxing, dyeing, and unwaxing. My article critiques 
+                                how generative art reduces batik into a disposable "style tag" ,
+                                erasing its essence as a knowledge-making process. The narrative 
+                                structure of the choreography aims to make viewers witness this 
+                                process, rather than merely consume an end result. The real-time 
+                                projection via Touch Designer visualizes particle effects of batik 
+                                patterns, dynamic evolution of authentic ice-crack textures, and the 
+                                flow paths of molten wax—these are not imitations of a "batik style," 
+                                but visual reconstructions of the actual making process. The blue hues 
+                                in the imagery originate from real-time mapping of the dancers' bodies, 
+                                not algorithmic data extraction of "batik style." 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="artwork-images-row animate-in">
+                        <img src="images/双鱼.png" alt="Double Fish" class="artwork-image" />
+                        <img src="images/蝴蝶.png" alt="Butterfly" class="artwork-image" />
+                    </div>
+                    <div class="artwork-text-bottom">
+                        <p class="artwork-paragraph animate-in">
+                           Why choose interactive dance? Because dance itself is an unrepeatable 
+                           bodily process—each breath, each flick of the wrist exists only in 
+                           that singular moment. What audiences witness is not a result that can 
+                           be captured or endlessly replicated, but an event unfolding in real time. 
+                           I want viewers to reflect: when generative art turns all cultural 
+                           artifacts into callable "styles," what have we lost? And this is precisely 
+                           where TouchDesigner's value lies: only real-time interaction enables 
+                           "dance composing content, interaction following the dance"—the dancer’s 
+                           motion capture data directly drives particles, ice-crack patterns, and 
+                           motifs to bloom from the body. This live generation completely rejects 
+                           the black-box logic of AI, which follows the pattern of "input keywords—output 
+                           fixed images." Generative art relies on statistical patterns within datasets, 
+                           whereas the generation in *Indigo Breath* is based solely on the dancer’s present 
+                           physical state. With TD, I’ve proven one thing: algorithms may imitate outcomes, 
+                           but they can never replicate the process—and that is exactly why batik remains alive. 
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Page 8: Conclusion -->
+            <section id="conclusion" class="page-conclusion">
+                <div class="conclusion-left">
+                    <h2 class="conclusion-title animate-in">V.Democracy is not free of charge.</h2>
+                    <p class="conclusion-paragraph animate-in">
+                        The slogan of "creative democratization" masks a crucial truth: not all 
+                        knowledge should be accessible to "everyone." True democracy does not mean 
+                        eliminating thresholds, but ensuring those excluded have the right to define 
+                        them. Genuine respect is not about letting everyone "do" batik, but recognizing 
+                        that some things you don't understand—and shouldn't pretend to understand.
+                    </p>
+                    <p class="conclusion-paragraph animate-in">
+                        Surveillance capitalism seeks to turn everything into extractable, 
+                        quantifiable, and resalable data. But the indigo of batik cannot 
+                        be fully captured by RGB values. It is a living knowledge, not 
+                        merely a stylistic keyword. 
+                    </p>
+                    <p class="conclusion-paragraph animate-in">
+                        The batik artisans of Yogyakarta, the dyers of Guizhou, the weavers
+                        of Sulawesi — they are not competing in a market. They are watching
+                        their vocabulary become raw material for systems that will never
+                        speak their language. The question is not whether AI can learn to
+                        make batik. The question is whether we believe that learning
+                        requires permission.
+                    </p>
+
+                </div>
+                
+               
+            </section>
+
+            <!-- Page 9: References -->
+            <section id="references" class="page-references">
+                <div class="references-container">
+                    <div class="references-left">
+                        <h2 class="references-title animate-in">REFERENCES</h2>
+                        
+                        <div class="references-list animate-in">
+                            <div class="reference-item no-border">
+                               <p>Foucault, M. (1977). Discipline and punish: The birth of the prison. Vintage Books.</p>
+                            </div>
+                            <div class="reference-item no-border">
+                                <p>Guo, R. G., & Ji, X. L. (2026). Intellectual property protection pathways for creative transformations of intangible cultural heritage. Beijing Social Sciences, (3). https://doi.org/10.14092/j.cnki.cn11-3956/c.2026.03.023</p>
+                            </div>
+                            <div class="reference-item no-border">
+                                <p>Lu, L. Y., & Song, B. W. (2024). The composition, impact and response of “digital colonialism”. Foreign Languages and Literature, 40(2), 146–156.</p>
+                            </div>
+                            <div class="reference-item no-border">
+                                <p>Ouyang, E. Q. (2023). The negation of algorithmic power. Journal of Southwest University of Political Science and Law, 25(4), 137–146. https://doi.org/10.3969/j.issn.1008-4355.2023.04.11Haraway, D. (1988). 'Situated Knowledges: The Science Question in Feminism.' <em>Feminist Studies</em>, 14(3), 575–599.</p>
+                            </div>
+                            <div class="reference-item no-border">
+                                <p>Zhao, S. S., & Cao, P. (2025). [Study on digital texture image and intelligent reading algorithm]. 计算机科学与应用, 15(3), 53. https://doi.org/10.12677/csa.2025.153053</p>
+                            </div>
+                            <div class="reference-item no-border">
+                                <p>Zubzoff, S. (2019). The age of surveillance capitalism: The fight for a human future at the new frontier of power. PublicAffairs.</p>
+                            </div>
+                        </div>
+                        <button class="page9-primary-button" type="button" data-scroll-top>
+                            ↑ Enter Column
+                        </button>
+                    </div>
+                </div>
+                
+            </section>
+        </div>
+    </main>
+
+    <!-- Pattern Modal -->
+    <div id="pattern-modal" class="modal-overlay" style="display: none;">
+        <div class="modal-content">
+            <h3 id="modal-title"></h3>
+            <img id="modal-image" src="" alt="">
+            <p id="modal-description"></p>
+            <button class="modal-close" onclick="closeModal()">CLOSE</button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

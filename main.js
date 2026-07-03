@@ -228,6 +228,33 @@ function initAnimations() {
     animateElements.forEach(el => observer.observe(el));
 }
 
+function initPrintingText() {
+    const printingElements = document.querySelectorAll('.printing-text');
+
+    printingElements.forEach((element) => {
+        if (element.dataset.processed === 'true') return;
+
+        const text = (element.textContent || '').replace(/\s+/g, ' ').trim();
+        if (!text) return;
+
+        const delayOffset = Number.parseFloat(element.dataset.delayOffset || '0');
+        const words = text.split(' ');
+        const fragment = document.createDocumentFragment();
+
+        words.forEach((word, index) => {
+            const span = document.createElement('span');
+            span.className = 'printing-word';
+            span.textContent = word;
+            span.style.setProperty('--word-delay', `${delayOffset + index * 0.05}s`);
+            fragment.appendChild(span);
+        });
+
+        element.textContent = '';
+        element.appendChild(fragment);
+        element.dataset.processed = 'true';
+    });
+}
+
 // Sidebar Navigation Observer
 function initSidebarObserver() {
     const sections = ['cover', 'intro', 'chapter1', 'chapter2', 'chapter3', 'artwork', 'conclusion', 'references'];
@@ -448,6 +475,7 @@ function resetAutoSlide(carouselIndex) {
 // Initialize Everything
 document.addEventListener('DOMContentLoaded', () => {
     initCoverCanvas();
+    initPrintingText();
     initAnimations();
     initSidebarObserver();
     initHighlightText();
